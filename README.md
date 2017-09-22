@@ -7,12 +7,13 @@ Can we get volunteers to help take notes?
 	*[Google Doc for this session](https://docs.google.com/document/d/1PrVLJ7gNen_a2aoPJTnWoOLqrtYj_YaBvVL4v2nXVQQ/edit)
 
 ## What *is* Generative Art?
+* According to wikipedia: "Generative art refers to art that in whole or in part has been created with the use of an autonomous system. "
 * Doesn't have to be created with code, but commonly is.
 * The resulting art is generated over a loop---of some sort
 
 ## Inspirational
 
-* [Immy Smith's Hand Drawn Art: text -> morse code -> drawing rules ](https://twitter.com/DrImmySmith/status/908595731048656896)
+* [Immy Smith: text -> morse code -> hand drawing rules ](https://twitter.com/DrImmySmith/status/908595731048656896)
 * [Ballet Rotoscope](https://www.youtube.com/watch?v=yzJk6ww3LD0)
 
 
