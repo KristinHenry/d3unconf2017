@@ -12,7 +12,7 @@ Can we get volunteers to help take notes?
 
 ## Inspirational
 * [Ballet Rotoscope](https://www.youtube.com/watch?v=yzJk6ww3LD0)
-* ![Immy Smith's Hand Drawn Art: text -> morse code -> drawing rules ](https://twitter.com/DrImmySmith/status/908595731048656896)
+* [Immy Smith's Hand Drawn Art: text -> morse code -> drawing rules ](https://twitter.com/DrImmySmith/status/908595731048656896) ![](https://pbs.twimg.com/media/DJv6-lfWkAAXNUU.jpg:large)
 
 
 
