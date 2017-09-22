@@ -1,0 +1,114 @@
+<!doctype html>
+<meta charset="utf-8">
+<head>
+  <title>Seed code, for getting started with Generative Art in D3.V4, by Kristin Henry</title>
+  <style>
+    body { margin: 0; }
+    svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    rect { fill: transparent; }
+  </style>
+  <script src='http://d3js.org/d3.v4.min.js'></script> 
+</head>
+<body style="background-color: #333">
+<script type='text/javascript'>
+
+var width = 300,
+	height = 300;
+
+var xmin = 20,
+	xmax = width-20,
+	ymin = 20,
+	ymax = height-20;
+
+var rmin = 2;
+
+var canvas = d3.select('body')
+    			.append('canvas')
+      			.attr('width', width)
+     			.attr('height', height)
+     			.node().getContext('2d');
+
+var dot = {
+      x: randomRange(xmin,xmax), 
+      y: randomRange(ymin,ymax), 
+      r: randomRange(3,4) + rmin, 
+      dx: getDir(),
+      dy: getDir()};
+
+
+function randomRange(min, max){ 
+	return Math.floor((Math.random() * (max - min + 1)) + min); 
+}
+
+
+function getDir(){
+  if(randomRange(0,1) == 1){ return 1;}
+  return -1;
+}
+
+
+function testBounds(){
+	var d = dot;
+  	if(d.x <= (xmin+d.r) ){
+   		d.dx = 1 + randomRange(.1, .4);
+  	} else if(d.x >= (xmax-d.r) ){
+   		d.dx = -1 - randomRange(.1, .4);
+  	} 
+  
+  	if(d.y < (ymin+d.r)){
+   		d.dy = 1 + randomRange(.1, .4);
+  	} else if(d.y >= (ymax-d.r)){
+    	d.dy = -1 - + randomRange(.1, .4);
+  	}  
+}
+
+
+function update(){
+	var d = dot;
+	d.x += d.dx;
+	d.y += d.dy;
+}
+
+
+function draw() {
+    //canvas.clearRect(0, 0, width, height); // uncomment this, if you want 'bouncy ball'
+    canvas.beginPath();
+   
+    
+    d = dot;
+    canvas.fillStyle = '#555';
+    var cx = d.x; 
+    var cy = d.y; 
+    canvas.moveTo(cx, cy);
+    canvas.arc(cx, cy, d.r, 0, 2 * Math.PI);
+    
+    canvas.fill();
+};
+
+
+//------------------------------------------------------------
+// This portion controls the timer loop
+var timer_elapsed = 0;
+var max_time = 50000;
+
+// Kick off the timer, and the action begins: 
+var timer = d3.timer(tickFxn);
+
+
+function tickFxn(elapsed) {
+  timer_elapsed = elapsed;
+ 
+  testBounds();
+  update();
+  draw();
+  
+  if (timer_elapsed > max_time) { timer.stop(); } // comment this out, if we want animation to not stop
+
+}
+//---------------------------------------------------
+</script>
+</body>
