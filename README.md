@@ -9,4 +9,4 @@ Notes and Code for Generative Viz in D3 Session
 
 
 ## A Little Seed 
-(https://github.com/KristinHenry/d3unconf2017/blob/master/drawing.jpg)
+![](https://github.com/KristinHenry/d3unconf2017/blob/master/drawing.jpg)
