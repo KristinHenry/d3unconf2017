@@ -22,3 +22,7 @@ Can we get volunteers to help take notes?
 *Written in D3.V4
 
 ![](https://github.com/KristinHenry/d3unconf2017/blob/master/drawing.jpg)
+
+
+
+[![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/S6S36A7G)
